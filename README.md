@@ -15,8 +15,7 @@
 
 ## **:rocket: OBJETIVO**
 
-O projeto tem como finalidade **estabelecer uma conexão** entre **pessoas e/ou entidades.
-
+O objectivo geral é criar uma versão da **Kixikila convencional mais eficiente**. Isso inclui tornar a Kixikila mais confiável nas transações, garantir que os jogadores recebam o **dinheiro** sempre no momento certo e facilitar a busca de acordo com a necessidade de cada um.💜🤍 
 <!-- 
   ...
   Local Reservado para o GIF do projeto rodando.
