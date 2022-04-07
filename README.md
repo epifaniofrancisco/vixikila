@@ -38,7 +38,5 @@ O objectivo geral é criar uma versão da **Kixikila convencional mais eficiente
 <h3 align="center">
 Feito com ❤️ por <a href="#">Vixikila</a>
 <br><br>
-<a href="#">
-  <img alt="#" src="">
-</a>
+
 </h3>
