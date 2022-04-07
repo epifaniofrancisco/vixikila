@@ -12,7 +12,6 @@
 
 </h3>
 
-![Banner](./image/ui/home.jpeg)
 
 ## **:rocket: OBJETIVO**
 
