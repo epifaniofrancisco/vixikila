@@ -40,14 +40,14 @@ main .cadastrar .cadastrar-logo img {
 main .cadastrar hr {
 	width: 331px;
 	height: 5px;
-	background-color: #7109b6;
+	background-color: #7209b7;
 	margin-bottom: 40px;
 }
 
 main .cadastrar button {
 	width: 281px;
 	height: 50px;
-	background-color: #7109b6;
+	background-color: #7209b7;
 	color: white;
 	border-radius: 25px;
 	border: none;
@@ -80,7 +80,7 @@ main form {
 }
 
 .forms input::placeholder {
-	color: #7109b6;
+	color: #7209b7;
 }
 
 .forms p {

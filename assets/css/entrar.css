@@ -10,7 +10,7 @@ main {
 }
 
 main .kixikila {
-	background-color: rgb(113, 9, 182, 0.5);
+	background-color: rgb(114, 9, 183, 0.5);
 	width: 40%;
 	position: relative;
 }
@@ -52,7 +52,7 @@ main .form-entrar {
 main .form-entrar hr {
 	width: 400px;
 	height: 5px;
-	background-color: #7109b6;
+	background-color: #7209b7;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
@@ -81,7 +81,7 @@ main .form-entrar form input::placeholder {
 main .form-entrar form button {
 	width: 251px;
 	height: 43px;
-	background-color: #7109b6;
+	background-color: #7209b7;
 	color: white;
 	border-radius: 25px;
 	border: none;
