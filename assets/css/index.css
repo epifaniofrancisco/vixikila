@@ -1,38 +1,43 @@
-main .apresentar {
+:root {
+    --primary-color: #7209b7;
+    --secondary-color: #3b3551;
+	--button-hover-color: #520785;
+}
+
+.apresentar {
     width: 100%;
     height: 230px;
-    background-color: #7209b7;
+    background-color: var(--primary-color);
     color: white;
     display: flex;
 
 }
 
-main .apresentar .textos {
+.apresentar .textos {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 50px 25px 150px;
 }
 
-main .apresentar .textos h2 {
+.apresentar .textos h2 {
     margin-bottom: 20px;
 }
 
-main .apresentar .textos p {
+.apresentar .textos p {
     text-indent: 20px;
     text-align: center;
     line-height: 25px;
 }
 
-main .apresentar img {
+.apresentar img {
     height: 205px;
     margin-top: 50px;
     margin-right: 30px;
 }
 
-
 /* Kixikilas ativas */
-main .kixikilas-activas {
+.kixikilas-activas {
     width: 100%;
     height: 603;
     display: flex;
@@ -41,10 +46,10 @@ main .kixikilas-activas {
 
 }
 
-main .kixikilas-activas .card {
+.kixikilas-activas .card {
     width: 250px;
     height: 423px;
-    background-color: #3b3551;
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 35px;
     display: flex;
@@ -54,17 +59,17 @@ main .kixikilas-activas .card {
     padding: 25px 20px;
 }
 
-main .kixikilas-activas .card .header {
+.kixikilas-activas .card .header {
     width: 200px;
     height: 80px;
-    background-color: #7209b7;
+    background-color: var(--primary-color);
     border-radius: 28px;
     display: flex;
     align-items: center;
     padding: 0px 20px;
 }
 
-main .kixikilas-activas .card .header .hand-img {
+.kixikilas-activas .card .header .hand-img {
     width: 72px;
     height: 72px;
     background-color: white;
@@ -72,29 +77,39 @@ main .kixikilas-activas .card .header .hand-img {
     margin-right: 19px;
 }
 
-main .kixikilas-activas .card h4 {
+.kixikilas-activas .card h4 {
     margin-top: 30px;
     margin-bottom: 13px;
 }
 
-main .kixikilas-activas .card .descricao {
+.kixikilas-activas .card .descricao {
     text-align: center;
     margin-bottom: 13px;
 }
 
-main .kixikilas-activas .card .valor {
+.kixikilas-activas .card .valor {
     margin: 23px 0px;
 }
 
-main .kixikilas-activas .card .estado {
+.kixikilas-activas .card .fazer-parte {
+    width: 170px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
     font-size: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+.kixikilas-activas .card .fazer-parte:hover {
+    background-color: var(--button-hover-color);
 }
 
 /* Progresso */
 .progresso {
     width: 100%;
     height: 350px;
-    background-color: #7209b7;
+    background-color: var(--primary-color);
     color: white;
     display: flex;
     align-items: center;

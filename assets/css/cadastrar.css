@@ -1,7 +1,8 @@
 :root {
-	--primary-color: #7209b7;
-  }
-  
+    --primary-color: #7209b7;
+    --secondary-color: #3b3551;
+	--button-hover-color: #520785;
+}
 
 main {
 	margin: 0 auto;
@@ -129,30 +130,30 @@ main {
 .cadastrar hr {
 	width: 331px;
 	height: 5px;
-	background-color: #7209b7;
+	background-color: var(--primary-color);
 	margin-bottom: 40px;
 }
 
 .cadastrar button {
 	width: 281px;
 	height: 50px;
-	background-color: #7209b7;
+	background-color: var(--primary-color);
 	color: white;
 	border-radius: 25px;
 	border: none;
 	text-align: center;
 	font-size: 20pt;
 	position: relative;
+	cursor: pointer;
 }
 
 .cadastrar button:hover {
-	background-color: #520785;
-	cursor: pointer;
+	background-color: var(--button-hover-color);
 }
 
 .forms {
 	width: 60%;
-	background-color: #3b3551;
+	background-color: var(--secondary-color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -175,7 +176,7 @@ main form {
 }
 
 .forms input::placeholder {
-	color: #7209b7;
+	color: var(--primary-color);
 }
 
 .forms p {
@@ -192,7 +193,7 @@ main form {
 
 /* Segunda etapa */
 .segunda-etapa {
-	color: #3b3551;
+	color: var(--secondary-color);
 	display: flex;
 	flex-direction: column;
 }
@@ -267,11 +268,11 @@ main form {
 	cursor: pointer;
 	transition: 0.3s;
 	text-align: center;
+	cursor: pointer;
 }
 
 .terceira-etapa .banco-group button:hover {
-	background-color: #520785;
-	cursor: pointer;
+	background-color: var(--button-hover-color);
 }
 
 /* Confirmar os dados bancários */
@@ -316,7 +317,7 @@ main form {
 	display: block;
 	width: 100%;
 	padding: 0.75rem;
-	border: 1px solid #7209b7;
+	border: 1px solid var(--primary-color);
 	border-radius: 0.25rem;
 }
 
@@ -331,7 +332,7 @@ main form {
 }
 
 .quarta-etapa h1 {
-	color: #7209b7;
+	color: var(--primary-color);
 	margin: 50px 0px;
 }
 
@@ -342,18 +343,18 @@ main form {
 .quarta-etapa button {
 	width: 281px;
 	height: 50px;
-	background-color: #7209b7;
+	background-color: var(--primary-color);
 	color: white;
 	border-radius: 5px;
 	border: none;
 	text-align: center;
 	font-size: 20pt;
 	margin-top: 50px;
+	cursor: pointer;
 }
 
 .quarta-etapa button:hover {
-	background-color: #520785;
-	cursor: pointer;
+	background-color: var(--button-hover-color);
 }
 
   /* Button */
@@ -365,6 +366,7 @@ main form {
   
 .btn {
 	width: 30%;
+	height: 40px;
 	padding: 0.75rem;
 	text-decoration: none;
 	background-color: var(--primary-color);
@@ -375,9 +377,9 @@ main form {
 	cursor: pointer;
 	transition: 0.3s;
 	text-align: center;
+	cursor: pointer;
   }
 
   .btn:hover {
-		background-color: #520785;
-		cursor: pointer;
+		background-color: var(--button-hover-color);
   }

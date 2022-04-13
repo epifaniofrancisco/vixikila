@@ -1,5 +1,8 @@
-/* Main */
-
+:root {
+    --primary-color: #7209b7;
+    --secondary-color: #3b3551;
+	--button-hover-color: #520785;
+}
 main {
 	margin: auto;
 	margin-top: 50px;
@@ -52,7 +55,7 @@ main .form-entrar {
 .form-entrar hr {
 	width: 400px;
 	height: 5px;
-	background-color: #7209b7;
+	background-color: var(--primary-color);
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
@@ -65,8 +68,8 @@ main .form-entrar {
 
 .form-entrar form input {
 	width: 350px;
-	height: 40px;
-	background-color: #3b3551;
+	height: 48px;
+	background-color: var(--secondary-color);
 	color: white;
 	font-size: 17px;
 	text-indent: 25px;
@@ -81,18 +84,18 @@ main .form-entrar {
 .form-entrar form button {
 	width: 251px;
 	height: 43px;
-	background-color: #7209b7;
+	background-color: var(--primary-color);
 	color: white;
 	border-radius: 25px;
 	border: none;
 	text-align: center;
 	font-size: 24px;
 	margin-bottom: 40px;
+	cursor: pointer;
 }
 
 .form-entrar form button:hover {
-	background-color: #520785;
-	cursor: pointer;
+	background-color: var(--button-hover-color);
 }
 
 .form-entrar form button span {
@@ -109,6 +112,6 @@ main .form-entrar {
 }
 
 .form-entrar p a:hover {
-	color: #520785;
+	color: var(--button-hover-color);
 	cursor: pointer;
 }
