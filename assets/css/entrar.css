@@ -9,13 +9,13 @@ main {
 	max-width: 900px;
 }
 
-main .kixikila {
+.kixikila {
 	background-color: rgb(114, 9, 183, 0.5);
 	width: 40%;
 	position: relative;
 }
 
-main .kixikila .background {
+.kixikila .background {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -24,7 +24,7 @@ main .kixikila .background {
   }
 
 
-main .kixikila .cadastrar-logo {
+.kixikila .cadastrar-logo {
 	background-color: white;
 	width: 200px;
 	height: 60px;
@@ -49,7 +49,7 @@ main .form-entrar {
 	align-items: center;
 }
 
-main .form-entrar hr {
+.form-entrar hr {
 	width: 400px;
 	height: 5px;
 	background-color: #7209b7;
@@ -57,13 +57,13 @@ main .form-entrar hr {
 	margin-bottom: 30px;
 }
 
-main .form-entrar form {
+.form-entrar form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-main .form-entrar form input {
+.form-entrar form input {
 	width: 350px;
 	height: 40px;
 	background-color: #3b3551;
@@ -74,11 +74,11 @@ main .form-entrar form input {
 	border-radius: 25px;
 }
 
-main .form-entrar form input::placeholder {
+.form-entrar form input::placeholder {
 	color: white;
 }
 
-main .form-entrar form button {
+.form-entrar form button {
 	width: 251px;
 	height: 43px;
 	background-color: #7209b7;
@@ -90,15 +90,25 @@ main .form-entrar form button {
 	margin-bottom: 40px;
 }
 
-main .form-entrar form button span {
+.form-entrar form button:hover {
+	background-color: #520785;
+	cursor: pointer;
+}
+
+.form-entrar form button span {
 	margin-right: 10px;
 }
 
-main .form-entrar p {
+.form-entrar p {
 	font-size: 20px;
 }
 
-main .form-entrar p a {
+.form-entrar p a {
 	font-weight: 600;
 	text-decoration: none;
+}
+
+.form-entrar p a:hover {
+	color: #520785;
+	cursor: pointer;
 }

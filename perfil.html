@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vixikila | Entrar</title>
+    <title>Vixikila | Perfil</title>
     <link rel="shortcut icon" href="assets/image/LOGO ORIGINAL/VIxikila LOGO 2x.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
+    <script src="assets/js/perfil.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="assets/image/LOGO ORIGINAL/VIxikila LOGO 3@2x.png" alt="Logo VIxikila"></div>
+        <div class="logo"><a href="index.html"><img src="assets/image/LOGO ORIGINAL/VIxikila LOGO 3@2x.png" alt="Logo VIxikila"></a></div>
         <nav>
             <ul class="descobrir">
-                <li><a href="#">Criar Kixikila</a></li>
+                <li><a href="entrar.html">Criar Kixikila</a></li>
                 <li><a href="#">Pesquisar Kixikila</a></li>
                 <li><a href="#">Como funciona?</a></li>
             </ul>
@@ -58,7 +59,7 @@
                 </div>
             </div>
             <div class="criar-kixikila">
-                <button><img src="assets/image/criar-kixikila.png" alt="Clicar para criar kixikila"></button>
+                <button id="criarModal"><img src="assets/image/criar-kixikila.png" alt="Clicar para criar kixikila"></button>
                 <span>Criar Kixikila</span>
             </div>
 
@@ -109,6 +110,41 @@
 
         </div>
 
+        <div class="tela-criar-kixikila" id="modal">
+            <span class="fechar">&times;</span>
+            <h1>Criar uma kixikila</h1>
+            <form action="#">
+                <input type="text" name="id" id="id" placeholder="| ID de Usuário">
+                <input type="text" name="iban" id="iban" placeholder="| IBAN">
+                    
+                <input type="number" name="montante" id="montante" placeholder="| Valor mensal (00.00 Kz)">
+                    
+                <div class="numero-pessoas">
+                    <div class="radio-group">
+                        <input type="radio" name="radio" id="2-pessoas" checked>
+                        <label for="2-pessoas">2 Pessoas</label>
+                        <label for="2-pessoas">(2 Meses)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="radio" id="4-pessoas">
+                        <label for="4-pessoas">4 Pessoas</label>
+                        <label for="4-pessoas">(4 Meses)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="radio" id="8-pessoas">
+                        <label for="8-pessoas">8 Pessoas</label>
+                        <label for="8-pessoas">(8 Meses)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="radio" id="12-pessoas">
+                        <label for="12-pessoas">12 Pessoas</label>
+                        <label for="12-pessoas">(12 Meses)</label>
+                    </div>
+                    
+                </div>
+                <button>Criar kixikila</button>
+            </form>
+        </div>
     </main>
     
 </body>
