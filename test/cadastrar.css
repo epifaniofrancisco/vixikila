@@ -1,129 +1,24 @@
 :root {
-	--primary-color: #7109b6;
-}
+	--primary-color: #7209b7;
+  }
+  
 
 main {
 	margin: 0 auto;
+	display: grid;
 	margin-top: 50px;
 	max-width: 900px;
 }
 
-input {
-    width: 100%;
-	height: 40px;
-	font-size: 17px;
-	text-indent: 31px;
-	margin-bottom: 38px;
-}
-
-/* Form */
-.form {
-    height: 90vh;
-}
-
-.form-step {
-	display: none;
-	transform-origin: top;
-	animation: animate 0.5s;
-}
-
-.form-step-active {
-	display: block;
-}
-
-.input-group {
-	margin: 2rem 0;
-}
-
-
-.first-content {
-	display: flex;
-    height: 80%;
-}
-
-.first-content .cadastrar {
-	background-color: white;
-	width: 45%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.first-content .cadastrar .logo {
-	width: 50px;
-	height: 70px;
-	margin-bottom: 20px;
-}
-
-.first-content .cadastrar hr {
-	width: 331px;
-	height: 5px;
-	background-color: #7109b6;
-	margin-bottom: 30px;
-}
-
-.first-content .cadastrar button {
-	width: 301px;
-	height: 50px;
-	background-color: #7109b6;
-	color: white;
-	border-radius: 25px;
-	border: none;
-	text-align: center;
-	font-size: 20pt;
-}
-
-.form-step .forms {
-	width: 55%;
-	background-color: #3b3551;
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-
-}
-
-.form-step .forms .form-input {
-    width: 85%;
-    margin-top: 2rem;
-}
-
-.forms input::placeholder {
-	color: #7109b6;
-}
-
-.forms p {
-    width: 80%;
-    color: white;
-    font-size: 19px;
-    text-align: center;
-}
-
-.forms p span {
-	font-weight: 600;
-}
-
-#first-btn {
-    display: none;
-}
-
-
-
-.width-50 {
-	width: 50%;
-}
-
-.ml-auto {
-	margin-left: auto;
-}
-
-/* Progressbar */
+/* Progress bar */
 .progressbar {
+	width: 900px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	counter-reset: step;
 	margin: 2rem 0 4rem;
+	margin: 0 auto;
 }
 
 .progressbar::before,
@@ -172,27 +67,293 @@ input {
 	color: #f3f3f3;
 }
 
-@keyframes animate {
+
+/* Etapas */
+.form-step {
+	display: none;
+	transform-origin: top;
+	animation: animate 0.5s;
+  }
+  
+  .form-step-active {
+	display: block;
+  }
+  
+  
+  @keyframes animate {
+	from {
+	  transform: scale(1, 0);
+	  opacity: 0;
+	}
+	to {
+	  transform: scale(1, 1);
+	  opacity: 1;
+	}
+  }
+
+/* Primeira etapa de cadastro */
+.primeira-etapa {
+	height: 80vh;
+	display: flex;
+}
+
+.cadastrar {
+	background-color: white;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.cadastrar .background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.1;
+	object-fit: cover;
+}
+
+.cadastrar .cadastrar-logo {
+	width: 210px;
+	height: 95px;
+	margin-bottom: 20px;
+}
+
+.cadastrar .cadastrar-logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.cadastrar hr {
+	width: 331px;
+	height: 5px;
+	background-color: #7209b7;
+	margin-bottom: 40px;
+}
+
+.cadastrar button {
+	width: 281px;
+	height: 50px;
+	background-color: #7209b7;
+	color: white;
+	border-radius: 25px;
+	border: none;
+	text-align: center;
+	font-size: 20pt;
+	position: relative;
+}
+
+.cadastrar button:hover {
+	background-color: #520785;
+	cursor: pointer;
+}
+
+.forms {
+	width: 60%;
+	background-color: #3b3551;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-top: 50px;
+}
+
+.forms form input {
+	width: 400px;
+	height: 40px;
+	font-size: 17px;
+	text-indent: 31px;
+	margin-bottom: 38px;
+}
+
+.forms input::placeholder {
+	color: #7209b7;
+}
+
+.forms p {
+	width: 400px;
+	color: white;
+	font-size: 19px;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.forms p span {
+	font-weight: 600;
+}
+
+/* Segunda etapa */
+.segunda-etapa {
+	color: #3b3551;
+	display: flex;
+	flex-direction: column;
+}
+
+.segunda-etapa .input-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.segunda-etapa .input-row .input-group {
+	width: 45%;
+}
+.segunda-etapa .input-row .input-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+.segunda-etapa .input-row .input-group input {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #7209b7;
+	border-radius: 0.25rem;
+}
+
+
+/* Terceira Etapa: Dados bancários */
+.terceira-etapa .banco-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+
+}
+
+.terceira-etapa .banco {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.terceira-etapa .banco-group .banco label {
+	margin-right: 10px;
+  }
+  
+.terceira-etapa .banco-group .banco input {
+	width: 60%;
+	display: inline;
+	padding: 0.75rem;
+	border: 1px solid #7209b7;
+	border-radius: 0.25rem;
+	margin-right: 20px;
+}
+
+.terceira-etapa .banco-group button {
+	width: 20%;
+	font-size: 18px;
+	padding: 0.75rem;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: 0.3s;
+	text-align: center;
+}
+
+/* Confirmar os dados bancários */
+.confirmar-banco {
+	color: #3b3551;
+	padding: 10px;
+	display: none;
+	flex-direction: column;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
 	from {
 		transform: scale(1, 0);
 		opacity: 0;
-	}
-	to {
+	  }
+	  to {
 		transform: scale(1, 1);
 		opacity: 1;
-	}
+	  }
 }
 
-/* Button */
-.btns-group {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1.5rem;
+.confirmar-banco .input-row {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
-.btn {
-	padding: 0.75rem;
+.confirmar-banco .input-row .input-group {
+	width: 45%;
+}
+.confirmar-banco .input-row .input-group label {
 	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+.confirmar-banco .input-row .input-group input {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #7209b7;
+	border-radius: 0.25rem;
+}
+
+/* Quarta Etapa: Confirmação */
+.quarta-etapa {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.quarta-etapa h1 {
+	color: #7209b7;
+	margin: 50px 0px;
+}
+
+.quarta-etapa p {
+	text-align: center;
+}
+
+.quarta-etapa button {
+	width: 281px;
+	height: 50px;
+	background-color: #7209b7;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	font-size: 20pt;
+	margin-top: 50px;
+}
+
+  /* Button */
+.btns-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+.btn {
+	width: 30%;
+	padding: 0.75rem;
 	text-decoration: none;
 	background-color: var(--primary-color);
 	color: #f3f3f3;
@@ -200,7 +361,9 @@ input {
 	border-radius: 0.25rem;
 	cursor: pointer;
 	transition: 0.3s;
-}
-.btn:hover {
+	text-align: center;
+  }
+
+  .btn:hover {
 	box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
-}
+  }

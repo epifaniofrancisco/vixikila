@@ -2,58 +2,205 @@
 <html lang="pt-PT">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vixikila | Criar Conta</title>
-    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/cadastrar.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vixikila | Criar Conta</title>
+  <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cadastrar.css">
+  <script src="assets/js/cadastrar.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="assets/image/LOGO ORIGINAL/VIxikila LOGO 3@2x.png"
-                    alt="Logo VIxikila"></a></div>
-        <nav>
-            <ul class="descobrir">
-                <li><a href="entrar.html">Criar Kixikila</a></li>
-                <li><a href="#">Pesquisar Kixikila</a></li>
-                <li><a href="#">Como funciona?</a></li>
-            </ul>
-            <ul class="sign">
-                <li><a href="entrar.html"><span><img src="assets/image/icon/login.png" alt="Ícone de Login"></span>
-                        Entrar</a></li>
-                <li><a href="cadastrar.html"><span><img src="assets/image/icon/user.png" alt="ícone do usuário"></span>
-                        Criar Conta</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo"><a href="index.html"><img src="assets/image/LOGO ORIGINAL/VIxikila LOGO 3@2x.png"
+          alt="Logo VIxikila"></a></div>
+    <nav>
+      <ul class="descobrir">
+        <li><a href="entrar.html">Criar Kixikila</a></li>
+        <li><a href="#">Pesquisar Kixikila</a></li>
+        <li><a href="#">Como funciona?</a></li>
+      </ul>
+      <ul class="sign">
+        <li><a href="entrar.html"><span><img src="assets/image/icon/login.png" alt="Ícone de Login"></span>
+            Entrar</a></li>
+        <li><a href="cadastrar.html"><span><img src="assets/image/icon/user.png" alt="ícone do usuário"></span>
+            Criar Conta</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <div class="progressbar">
+    <div class="progress" id="progress"></div>
+
+    <div class="progress-step progress-step-active" data-title="Dados Pessoais"></div>
+    <div class="progress-step" data-title="Confirmar dados"></div>
+    <div class="progress-step" data-title="Dados bancários"></div>
+    <div class="progress-step" data-title="Verificação"></div>
+  </div>
+  <main action="#" class="form">
+    <!-- Passos -->
+    <!-- Primeira Etapa: Dados pessoais -->
+    <div class="form-step form-step-active">
+      <div class="primeira-etapa">
         <div class="cadastrar">
-            <img src="assets/image/PADRÃO DO LOGOTIPO.png" alt="Padrão do logótipo" class="background">
-            <div class="cadastrar-logo"><img src="assets/image/LOGO ORIGINAL/VIxikila LOGO @2x.png"
-                    alt="Logo de VIxikila"></div>
-            <hr>
-            <button>Submeter dados</button>
+          <img src="../assets/image/PADRÃO DO LOGOTIPO.png" alt="Padrão do logótipo" class="background">
+          <div class="cadastrar-logo"><img src="../assets/image/LOGO ORIGINAL/VIxikila LOGO @2x.png"
+              alt="Logo de VIxikila"></div>
+          <hr>
+          <button class=" btn-next">Submeter dados</button>
         </div>
         <div class="forms">
-            <form action="">
-                <input type="text" name="nomecompleto" id="nomecompleto" placeholder="| Nome de usuário">
-
-                <input type="text" name="numerobi" id="numerobi" placeholder="| 000010010LA008">
-
-                <input type="email" name="email" id="email" placeholder="| nomeusuario@provedor.com">
-
-                <input type="password" name="senha" id="senha" placeholder="| Senha">
-
-                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="| Confirmar senha">
-            </form>
-
-            <p>Depois de preencher os seus dados, terá que <span>submeter os dados</span> para criar o seu perfil</p>
+          <form action="">
+            <input type="text" name="nomecompleto" id="nomecompleto" placeholder="| Nome de usuário">
+            <input type="text" name="numerobi" id="numerobi" placeholder="| 000010010LA008">
+            <input type="email" name="email" id="email" placeholder="| nomeusuario@provedor.com">
+            <input type="password" name="senha" id="senha" placeholder="| Senha">
+            <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="| Confirmar senha">
+          </form>
+          <p>Depois de preencher os seus dados, terá que <span>submeter os dados</span> para criar o seu perfil</p>
         </div>
-    </main>
+      </div>
+    </div>
+
+    <!-- Segunda Etapa: Confirmação dos dados -->
+    <div class="form-step">
+      <div class="segunda-etapa">
+        <div class="input-row">
+          <div class="input-group">
+            <label for="nomecompletobi">Nome Completo</label>
+            <input type="text" name="nomecompletobi" id="nomecompletobi" disabled/>
+          </div>
+          <div class="input-group">
+            <label for="numero-bilhete">Nº do Bilhete</label>
+            <input type="text" name="numero-bilhete" id="numero-bilhete" disabled/>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" disabled/>
+          </div>
+          <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone" id="telefone" disabled/>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="text" name="data-nascimento" id="data-nascimento" disabled/>
+          </div>
+          <div class="input-group">
+            <label for="genero">Género</label>
+            <input type="text" name="genero" id="genero" disabled/>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="pais">País</label>
+            <input type="text" name="pais" id="pais" disabled/>
+          </div>
+          <div class="input-group">
+            <label for="provincia">Província</label>
+            <input type="text" name="provincia" id="provincia" />
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label for="municipio">Município</label>
+            <input type="text" name="municipio" id="municipio" disabled />
+          </div>
+          <div class="input-group">
+            <label for="residencia">Residência</label>
+            <input type="text" name="residencia" id="residencia" disabled/>
+          </div>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Voltar</a>
+          <a href="#" class="btn btn-next">Próximo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terceira Etapa: Dados bancários -->
+    <div class="form-step">
+      <div class="terceira-etapa">
+        <div class="banco-group">
+          <div class="banco">
+            <label for="conta-bancaria">Número da conta bancária</label>
+            <input type="text" name="conta-bancaria" id="dob" />
+          </div>
+          <button class="seguinte">Seguinte</button>
+        </div>
+
+        <!-- Confirmação dos dados bancários -->
+        <div class="confirmar-banco">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="nometitular">Nome Titular</label>
+              <input type="text" name="nometitular" id="nometitular" disabled/>
+            </div>
+            <div class="input-group">
+              <label for="numero-bilhete">Nº do Bilhete</label>
+              <input type="text" name="numero-bilhete" id="numero-bilhete" disabled/>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" disabled/>
+            </div>
+            <div class="input-group">
+              <label for="telefone">Telefone</label>
+              <input type="number" name="telefone" id="telefone" disabled/>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="data-nascimento">Data de Nascimento</label>
+              <input type="text" name="data-nascimento" id="data-nascimento" disabled/>
+            </div>
+            <div class="input-group">
+              <label for="genero">Género</label>
+              <input type="text" name="genero" id="genero" disabled/>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="pais">IBAN</label>
+              <input type="text" name="pais" id="pais" disabled/>
+            </div>
+            <div class="input-group">
+              <label for="provincia">Data de expiração</label>
+              <input type="text" name="provincia" id="provincia" disabled/>
+            </div>
+
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Voltar</a>
+            <a href="#" class="btn btn-next">Próximo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quarta Etapa: Código de confirmação -->
+    <div class="form-step">
+      <div class="quarta-etapa">
+
+        <h1>Verifique o Seu Email</h1>
+        <hr>
+        <p>Obrigado por se cadastrar na <span>VIxikila</span>, por favor clique no botão abaixo para finalizar o seu
+          cadastro com o link enviado no seu email.</p>
+        <button>Verificar Email</button>
+
+      </div>
+    </div>
+  </main>
 
 </body>
 
