@@ -40,7 +40,8 @@
     <div class="progress-step" data-title="Dados bancários"></div>
     <div class="progress-step" data-title="Verificação"></div>
   </div>
-  <main action="#" class="form">
+
+  <form action="#" class="form">
     <!-- Passos -->
     <!-- Primeira Etapa: Dados pessoais -->
     <div class="form-step form-step-active">
@@ -50,16 +51,17 @@
           <div class="cadastrar-logo"><img src="../assets/image/LOGO ORIGINAL/VIxikila LOGO @2x.png"
               alt="Logo de VIxikila"></div>
           <hr>
-          <button class=" btn-next">Submeter dados</button>
+          <button class="btn-next">Submeter dados</button>
         </div>
         <div class="forms">
-          <form action="">
-            <input type="text" name="nomecompleto" id="nomecompleto" placeholder="| Nome de usuário">
-            <input type="text" name="numerobi" id="numerobi" placeholder="| 000010010LA008">
-            <input type="email" name="email" id="email" placeholder="| nomeusuario@provedor.com">
+          <div class="input-forms">
+            <input type="text" name="nomeusuario" id="nomeusuario" placeholder="| Nome de usuário">
+            <input type="text" name="numerobi" id="numerobi" placeholder="| Número do Bilhete de Identidade">
+            <input type="email" name="email" id="email" placeholder="| Email">
+            <input type="tel" name="telefone" id="telefone" placeholder="| Telefone">
             <input type="password" name="senha" id="senha" placeholder="| Senha">
             <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="| Confirmar senha">
-          </form>
+          </div>
           <p>Depois de preencher os seus dados, terá que <span>submeter os dados</span> para criar o seu perfil</p>
         </div>
       </div>
@@ -120,8 +122,8 @@
           </div>
         </div>
         <div class="btns-group">
-          <a href="#" class="btn btn-prev">Voltar</a>
-          <a href="#" class="btn btn-next">Próximo</a>
+          <button class="btn btn-prev">Voltar</button>
+          <button class="btn btn-next">Próximo</button>
         </div>
       </div>
     </div>
@@ -134,7 +136,11 @@
             <label for="conta-bancaria">Número da conta bancária</label>
             <input type="text" name="conta-bancaria" id="dob" />
           </div>
+          
+        <div class="btns-group">
+          <button class="btn btn-prev">Voltar</button>      
           <button class="seguinte">Seguinte</button>
+        </div>
         </div>
 
         <!-- Confirmação dos dados bancários -->
@@ -145,45 +151,46 @@
               <input type="text" name="nometitular" id="nometitular" disabled/>
             </div>
             <div class="input-group">
-              <label for="numero-bilhete">Nº do Bilhete</label>
-              <input type="text" name="numero-bilhete" id="numero-bilhete" disabled/>
+              <label for="numero-bilhete-banco">Nº do Bilhete</label>
+              <input type="text" name="numero-bilhete-banco" id="numero-bilhete-banco" disabled/>
             </div>
           </div>
           <div class="input-row">
             <div class="input-group">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" disabled/>
+              <label for="email-banco">Email</label>
+              <input type="text" name="email-banco" id="email-banco" disabled/>
             </div>
             <div class="input-group">
-              <label for="telefone">Telefone</label>
-              <input type="number" name="telefone" id="telefone" disabled/>
+              <label for="telefone-banco">Telefone</label>
+              <input type="number" name="telefone-banco" id="telefone-banco" disabled/>
             </div>
           </div>
           <div class="input-row">
             <div class="input-group">
-              <label for="data-nascimento">Data de Nascimento</label>
-              <input type="text" name="data-nascimento" id="data-nascimento" disabled/>
+              <label for="data-nascimento-banco">Data de Nascimento</label>
+              <input type="text" name="data-nascimento-banco" id="data-nascimento-banco" disabled/>
             </div>
             <div class="input-group">
-              <label for="genero">Género</label>
-              <input type="text" name="genero" id="genero" disabled/>
+              <label for="genero-banco">Género</label>
+              <input type="text" name="genero-banco" id="genero-banco" disabled/>
             </div>
           </div>
           <div class="input-row">
             <div class="input-group">
-              <label for="pais">IBAN</label>
-              <input type="text" name="pais" id="pais" disabled/>
+              <label for="iban">IBAN</label>
+              <input type="text" name="iban" id="iban" disabled/>
             </div>
             <div class="input-group">
-              <label for="provincia">Data de expiração</label>
-              <input type="text" name="provincia" id="provincia" disabled/>
+              <label for="data-exp">Data de expiração</label>
+              <input type="text" name="data-exp" id="data-exp" disabled/>
             </div>
+          </div>
 
-          </div>
-          <div class="btns-group">
-            <a href="#" class="btn btn-prev">Voltar</a>
-            <a href="#" class="btn btn-next">Próximo</a>
-          </div>
+          
+        <div class="btns-group center">
+          <button class="btn btn-next">Próximo</button>
+        </div>
+
         </div>
       </div>
     </div>
@@ -200,7 +207,7 @@
 
       </div>
     </div>
-  </main>
+  </form>
 
   <footer>
     <div class="container">

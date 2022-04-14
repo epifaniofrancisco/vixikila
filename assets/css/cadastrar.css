@@ -4,7 +4,7 @@
 	--button-hover-color: #520785;
 }
 
-main {
+form {
 	margin: 0 auto;
 	display: grid;
 	margin-top: 50px;
@@ -159,20 +159,19 @@ main {
 	align-items: center;
 }
 
-main form {
+form .input-forms {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	margin-top: 50px;
 }
 
-.forms form input {
+.forms .input-forms input {
 	width: 400px;
 	height: 40px;
 	font-size: 17px;
 	text-indent: 31px;
-	margin-bottom: 38px;
+	margin-bottom: 28px;
 }
 
 .forms input::placeholder {
@@ -183,7 +182,7 @@ main form {
 	width: 400px;
 	color: white;
 	font-size: 19px;
-	margin-top: 60px;
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -369,9 +368,8 @@ main form {
   
 .btn {
 	width: 30%;
-	height: 40px;
+	height: 50px;
 	padding: 0.75rem;
-	text-decoration: none;
 	background-color: var(--primary-color);
 	color: #f3f3f3;
 	text-align: center;
@@ -381,7 +379,13 @@ main form {
 	transition: 0.3s;
 	text-align: center;
 	cursor: pointer;
+	border: none;
   }
+
+.btns-group.center {
+	justify-content: center;
+	align-items: center;
+}
 
   .btn:hover {
 		background-color: var(--button-hover-color);
