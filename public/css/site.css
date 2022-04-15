@@ -1,0 +1,48 @@
+.swiper-container {
+    width: 600px;
+    height: 300px;
+  }
+  .banner{
+      background-image: url('../images/banner2.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+  }
+
+.login
+{
+    position: relative;
+    top: -25px;
+}
+.form-control,.js-example-basic-single
+{
+    border-bottom: 2px solid red !important;
+    border-top: 0px solid red !important;
+    border-bottom: 2px solid red !important;
+    border-right: 0px solid red !important;
+}
+
+.above-defautl{
+    z-index: 5;
+}
+.user-menu{
+    
+}
+.center{
+    padding: 20px ;
+    border: 1px solid rgb(109, 107, 107);
+}
+.modal-links{
+    text-align: center;
+}
+
+.modal-links a{
+    
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 30px ;
+}
+
+.modal{
+    width: 90% !important;
+}
